@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0d0d;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  color: #e0e0e0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.highlight {
+  color: #facc15;
+}
+
+/* Social links */
+.socials {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.socials a {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.socials a:hover {
+  color: #facc15;
+}
+
+/* Card style */
+section.card {
+  background: rgba(26, 26, 26, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.15);
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.7);
+}
+
+section.card h2,
+section.card h3,
+section.card h4 {
+  margin-bottom: 1rem;
+}
+
+section.card p {
+  margin-bottom: 1.2rem;
+}
+
+/* Videos inside card */
+section.card video {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+/* Links and buttons */
+a {
+  color: #facc15;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 0.8rem;
+  background: #facc15;
+  color: #000;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #eab308;
+  transform: scale(1.05);
+}
+
+/* Hide scrollbar in Chrome/Safari */
+body::-webkit-scrollbar {
+  width: 0.4em;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(250, 204, 21, 0.5);
+  border-radius: 10px;
+}
+
+/* Hide scrollbar in Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(250,204,21,0.5) transparent;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section.card {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Consistent spacing for future skills/certifications/resume sections */
+section.card h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+/* Hire Me Button Style */
+.hire-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  color: #111;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.hire-button:hover {
+  background-color: #facc15;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Social Icons in Header */
+.social-icons {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  color: #e0e0e0;
+  font-size: 1.8rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #facc15;
+}
